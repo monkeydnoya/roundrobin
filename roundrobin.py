@@ -1,4 +1,4 @@
-chart = []
+chart = [] # Шукуров Алмаз, АиУ 18-8 
 
 class Process:
     def __init__(self, pid, AT, BT, WT, TT, CT):
