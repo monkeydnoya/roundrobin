@@ -18,8 +18,8 @@ def shiftCL(alist):
     return alist
 
 def takeburstatStart(alist):
-    blist = [] * 5
-    for i in range(5):
+    blist = [] * len(alist)
+    for i in range(len(alist)):
         blist.append(alist[i].burst)
     return blist
 
@@ -92,4 +92,20 @@ RoundRobin(quantumTime, plist, len(plist))
 print(chart)
 calculateWaitingTime(plist, savedBT)
 
+
+
+
+
+""" Есептің жауабы
+['A', 'A', 'B', 'A', 'B', 'C', 'B', 'D', 'C', 'B', 'E', 'D', 'C', 'B', 'E', 'D', 'C', 'B', 'D', 'D']
+----------------------------
+Process A үшін күту уақыты: 1
+Process B үшін күту уақыты: 10
+Process C үшін күту уақыты: 9
+Process D үшін күту уақыты: 9
+Process E үшін күту уақыты: 5
+----------------------------
+Орташа күту уақыты: 6.8
+
+"""
 
